@@ -6,8 +6,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh "docker ps"
-                sh "docker ps"
+                sh "docker build -t nginx:power ."
             }
         }
     }
